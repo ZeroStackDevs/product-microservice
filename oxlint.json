@@ -1,0 +1,29 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"env": {
+		"node": true
+	},
+	"plugins": ["typescript"],
+	"rules": {
+		"curly": "error",
+		"@typescript-eslint/prefer-optional-chain": "error",
+		"@typescript-eslint/prefer-nullish-coalescing": "error",
+		"@typescript-eslint/prefer-for-of": "error",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/explicit-member-accessibility": [
+			"error",
+			{
+				"accessibility": "explicit"
+			}
+		],
+		"@typescript-eslint/explicit-function-return-type": "error",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_",
+				"caughtErrorsIgnorePattern": "^_"
+			}
+		]
+	}
+}
